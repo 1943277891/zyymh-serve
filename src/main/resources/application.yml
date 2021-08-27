@@ -1,0 +1,28 @@
+server:
+  port: 8085
+spring:
+  mvc:
+    view:
+      suffix: .html
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zyy?useSSL-=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  
+logging:
+  level:
+    com:
+      example:
+        mapper: debug
+
+dbdtobean:
+  driverName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/gyt?useSSL-=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+  authorName: Kele-Bing
+  
